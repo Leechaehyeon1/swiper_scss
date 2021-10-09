@@ -1,5 +1,6 @@
 @charset 'UTF-8';
 @import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
 
 main {
   width: 100%; height: 100vh;
@@ -31,8 +32,26 @@ main {
     filter: grayscale(100%) brightness(300%);
     // filter: hue-rotate(220deg) brightness(200%);
   }
-  .swiper-pagination {
-    top: 3.5vw; bottom: auto; left: auto; text-align: right; right: 5vw;
+  .swiper-pagination-fraction {
+    top: 3.5vw; bottom: auto; left: auto; width: auto; right: 5vw;
     font-size: 18px; font-weight: 500; color: #fff;
+    line-height: 1; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;
+
+    .swiper-pagination-current {
+      font-size: 24px; font-weight: bold;
+    }
+  }
+  .auto {
+    position: absolute; left: 5vw; bottom: 6vh;
+    display: flex;
+
+    li {
+      margin-right: 20px;cursor: pointer;
+      font-size: 20px; color: #fff; opacity: 0.5; transition: 0.4s;
+
+      &.on {
+        opacity: 1; transform: scale(1.25);
+      }
+    }
   }
 }

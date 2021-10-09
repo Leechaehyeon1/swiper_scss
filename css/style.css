@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -44,14 +45,35 @@ main {
     right: calc(5vw + 50px);
     transform: scale(0.7);
     filter: grayscale(100%) brightness(300%); }
-  main .swiper-pagination {
+  main .swiper-pagination-fraction {
     top: 3.5vw;
     bottom: auto;
     left: auto;
-    text-align: right;
+    width: auto;
     right: 5vw;
     font-size: 18px;
     font-weight: 500;
-    color: #fff; }
+    color: #fff;
+    line-height: 1;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px; }
+    main .swiper-pagination-fraction .swiper-pagination-current {
+      font-size: 24px;
+      font-weight: bold; }
+  main .auto {
+    position: absolute;
+    left: 5vw;
+    bottom: 6vh;
+    display: flex; }
+    main .auto li {
+      margin-right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #fff;
+      opacity: 0.5;
+      transition: 0.4s; }
+      main .auto li.on {
+        opacity: 1;
+        transform: scale(1.25); }
 
 /*# sourceMappingURL=style.css.map */

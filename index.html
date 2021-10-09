@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>step4 Swiper 응용 스와이퍼 기능 추가</title>
+  <title>step5 Swiper 스와이퍼 자동 실행 구현</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/074d4401d9.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
@@ -20,9 +21,14 @@
       <div class="swiper-slide">5</div>
     </div>
 
-    <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
     <div class="swiper-pagination"></div>
+
+    <ul class="auto">
+      <li class="start-btn on"><i class="fas fa-play"></i></li>
+      <li class="stop-btn"><i class="fas fa-pause"></i></li>
+    </ul>
   </main>
 </body>
 </html>
