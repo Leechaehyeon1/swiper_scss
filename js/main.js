@@ -11,7 +11,7 @@ var swiper = new Swiper('#wrap', {
   },
   loop: true,
   spaceBetween: 50,
-  speed: 1000,
+  speed: 1100,
   slidesPerView: 'auto', // 지정한 넓이 값으로 적용
   centeredSlides: true, // 현재 활성화 패널을 항상 가로 가운데 배치
   effect: 'coverflow',
